@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const container = document.getElementById('floatingHearts');
         const hearts = ['❤️', '💕', '💖', '💗', '💝', '💘', '💓', '💞'];
 
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 25; i++) {
             const heart = document.createElement('div');
             heart.className = 'floating-heart';
             heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
             heart.style.left = Math.random() * 100 + '%';
-            heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
-            heart.style.animationDelay = Math.random() * 5 + 's';
-            heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+            heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
+            heart.style.animationDelay = Math.random() * 8 + 's';
+            heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
             container.appendChild(heart);
         }
     }
@@ -105,16 +105,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const container = document.getElementById('finalHearts');
         const hearts = ['❤️', '💕', '💖', '💗', '💝', '💘', '💓'];
 
-        // Create 30 hearts that float up from bottom
-        for (let i = 0; i < 30; i++) {
+        // Create 20 hearts that float up from bottom
+        for (let i = 0; i < 20; i++) {
             const heart = document.createElement('div');
             heart.className = 'final-heart';
             heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
             heart.style.left = Math.random() * 100 + '%';
-            heart.style.bottom = '-50px'; // Start from bottom
-            heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
-            heart.style.animationDelay = Math.random() * 4 + 's';
-            heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            heart.style.animationDelay = Math.random() * 5 + 's';
             container.appendChild(heart);
         }
     }
