@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Step 1: The Question -->
+    <div class="card-container" id="step1">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title">Will you spend Valentine's Day with me?</h1>
+                
+                <div class="media-container">
+                    <div class="media-placeholder" id="mediaPlaceholder1">
+                        <!-- Replace with your image or video -->
+                        <img src="indir (15).jpg" alt="Our Photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'placeholder-text\'>💕 Add your photo here 💕</div>'">
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn btn-yes" id="yesBtn">Yes 💖</button>
+                    <button class="btn btn-no" id="noBtn">No 💔</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2: YAYY Celebration -->
+    <div class="card-container hidden" id="step2">
+        <div class="card celebration">
+            <div class="card-content">
+                <h1 class="title yayy">YAYY! 🎉💕</h1>
+                
+                <div class="media-container">
+                    <div class="media-placeholder" id="mediaPlaceholder2">
+                        <!-- Replace with your celebration image or video -->
+                        <img src="I  desire to all a great weekend!.gif" alt="Celebration" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'placeholder-text\'>💖 Add celebration photo 💖</div>'">
+                    </div>
+                </div>
+
+                <button class="btn btn-click-me" id="clickMeBtn">Click Me 💝</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3: When are you free? -->
+    <div class="card-container hidden" id="step3">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title">When are you free?</h1>
+                
+                <div class="date-time-container">
+                    <div class="date-time-option selected" id="dateOption">
+                        <div class="date-icon">📅</div>
+                        <div class="date-text">14.02.2026</div>
+                        <div class="time-text">17:00</div>
+                        <div class="check-mark">✓</div>
+                    </div>
+                </div>
+
+                <button class="btn btn-next" id="nextBtn1">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 4: Food Selection -->
+    <div class="card-container hidden" id="step4">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title">What would you like to eat?</h1>
+                
+                <div class="food-grid">
+                    <div class="food-item" data-food="pizza">
+                        <div class="food-image">🍕</div>
+                        <div class="food-name">Pizza</div>
+                    </div>
+                    <div class="food-item" data-food="sushi">
+                        <div class="food-image">🍣</div>
+                        <div class="food-name">Sushi</div>
+                    </div>
+                    <div class="food-item" data-food="pasta">
+                        <div class="food-image">🍝</div>
+                        <div class="food-name">Pasta</div>
+                    </div>
+                    <div class="food-item" data-food="steak">
+                        <div class="food-image">🥩</div>
+                        <div class="food-name">Steak</div>
+                    </div>
+                    <div class="food-item" data-food="burger">
+                        <div class="food-image">🍔</div>
+                        <div class="food-name">Burger</div>
+                    </div>
+                    <div class="food-item" data-food="salad">
+                        <div class="food-image">🥗</div>
+                        <div class="food-name">Salad</div>
+                    </div>
+                </div>
+
+                <button class="btn btn-next" id="nextBtn2">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 5: Final Celebration with Animated Hearts -->
+    <div class="card-container hidden" id="step5">
+        <div class="card final-card">
+            <div class="card-content">
+                <div class="final-hearts" id="finalHearts"></div>
+                <h1 class="title final-title">It's a Date! 💕</h1>
+                <p class="final-text">See you on <strong>February 14, 2026</strong> at <strong>17:00</strong></p>
+                <p class="final-text">We're having <strong id="selectedFood">delicious food</strong>!</p>
+                <div class="heart-animation">
+                    <span>❤️</span>
+                    <span>💕</span>
+                    <span>💖</span>
+                    <span>💗</span>
+                    <span>💝</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
